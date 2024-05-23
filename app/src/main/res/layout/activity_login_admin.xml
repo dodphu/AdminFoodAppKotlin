@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".activity.LoginAdminActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/food_app_icon" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="Food App Admin"
+        android:textColor="#EF2121"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edt_Email_Login_admin"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edtshape"
+        android:drawableLeft="@drawable/baseline_mail_outline_24"
+        android:drawablePadding="10dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/edt_Pass_Login_admin"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edtshape"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:drawablePadding="10dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp" />
+
+
+    <Button
+        android:id="@+id/btn_Login_Login_admin"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#3E8140"
+        android:text="Login"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Hoặc đăng nhập với" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_Google_Login_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/whitebutton"
+            android:drawableLeft="@drawable/google"
+            android:drawablePadding="10dp"
+            android:padding="16dp"
+            android:text="Google" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_Facebook_Login_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/whitebutton"
+            android:drawableLeft="@drawable/facebook"
+            android:drawablePadding="10dp"
+            android:padding="16dp"
+            android:text="Facebook" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_CreateAcc_Login_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Chưa có tài khoản ? Đăng kí ngay !" />
+
+</LinearLayout>

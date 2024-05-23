@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".activity.AddItemAdminActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="ADD ITEM"
+        android:textColor="#D60F00"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edt_addfood_name_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/edittextshape"
+        android:hint="Tên món ăn"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/edt_addfood_price_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/edittextshape"
+        android:hint="Giá món ăn"
+        android:padding="10dp" />
+
+
+    <TextView
+        android:id="@+id/txt_selectimage_additem_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittextshape"
+        android:drawableRight="@drawable/baseline_add_photo_alternate_24"
+        android:padding="10dp"
+        android:text="Chọn hình ảnh"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imgv_imageSelected_additem_admin"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/gallery" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Mô tả"
+        android:textColor="#4CAF50"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edt_addfood_description_admin"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/whitebutton"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:maxLines="3"
+        android:padding="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Thành phần chính"
+        android:textColor="#4CAF50"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edt_addfood_thanhphan_admin"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/whitebutton"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:maxLines="3"
+        android:padding="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btn_back_additem_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#F44336"
+            android:text="Trở về" />
+
+        <Button
+            android:id="@+id/btn_additem_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#4CAF50"
+            android:text="Lưu" />
+
+    </LinearLayout>
+</LinearLayout>

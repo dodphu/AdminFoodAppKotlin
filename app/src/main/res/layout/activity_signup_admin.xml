@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".activity.SignupAdminActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/food_app_icon" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="Food App"
+        android:textColor="#EF2121"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edt_NameRes_Signup_admin"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edtshape"
+        android:drawableLeft="@drawable/baseline_coffee_24"
+        android:drawablePadding="10dp"
+        android:hint="Tên cửa hàng"
+        android:inputType="text"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/edt_Name_Signup_admin"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edtshape"
+        android:drawableLeft="@drawable/adduser"
+        android:drawablePadding="10dp"
+        android:hint="Tên"
+        android:inputType="text"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/edt_Emailorphone_Signup_admin"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edtshape"
+        android:drawableLeft="@drawable/baseline_mail_outline_24"
+        android:drawablePadding="10dp"
+        android:hint="Email or phone"
+        android:inputType="textEmailAddress"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/edt_Pass_Signup_admin"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edtshape"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:drawablePadding="10dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/btn_Signup_Signup_admin"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#F82616"
+        android:text="Đăng kí"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Hoặc đăng kí với" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_Google_Signup_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/whitebutton"
+            android:drawableLeft="@drawable/google"
+            android:drawablePadding="10dp"
+            android:padding="16dp"
+            android:text="Google" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_Facebook_Signup_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/whitebutton"
+            android:drawableLeft="@drawable/facebook"
+            android:drawablePadding="10dp"
+            android:padding="16dp"
+            android:text="Facebook" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_Loginnow_Signup_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Đã có tài khoản ? Login now..." />
+
+</LinearLayout>
